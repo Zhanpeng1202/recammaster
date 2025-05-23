@@ -299,13 +299,10 @@ Feel free to explore these outstanding related works, including but not limited 
 
 Please leave us a star 🌟 and cite our paper if you find our work helpful.
 ```
-@misc{bai2025recammaster,
-      title={ReCamMaster: Camera-Controlled Generative Rendering from A Single Video}, 
-      author={Jianhong Bai and Menghan Xia and Xiao Fu and Xintao Wang and Lianrui Mu and Jinwen Cao and Zuozhu Liu and Haoji Hu and Xiang Bai and Pengfei Wan and Di Zhang},
-      year={2025},
-      eprint={2503.11647},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.11647}, 
+@article{bai2025recammaster,
+  title={ReCamMaster: Camera-Controlled Generative Rendering from A Single Video},
+  author={Bai, Jianhong and Xia, Menghan and Fu, Xiao and Wang, Xintao and Mu, Lianrui and Cao, Jinwen and Liu, Zuozhu and Hu, Haoji and Bai, Xiang and Wan, Pengfei and others},
+  journal={arXiv preprint arXiv:2503.11647},
+  year={2025}
 }
 ```
