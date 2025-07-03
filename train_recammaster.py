@@ -99,10 +99,10 @@ class TextVideoDataset(torch.utils.data.Dataset):
 
 
     def __getitem__(self, data_id):
-        text = self.text[data_id]
-        path = self.path[data_id]
         while True:
             try:
+                text = self.text[data_id]
+                path = self.path[data_id]
                 if self.is_image(path):
                     if self.is_i2v:
                         raise ValueError(f"{path} is not a video. I2V model doesn't support image-to-image training.")
