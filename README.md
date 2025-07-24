@@ -1,4 +1,4 @@
-# ReCamMaster: Camera-Controlled Generative Rendering from A Single Video (ICCV'25)
+# ReCamMaster: Camera-Controlled Generative Rendering from A Single Video (ICCV'25 Oral)
 
 <div align="center">
 <div align="center" style="margin-top: 0px; margin-bottom: 0px;">
