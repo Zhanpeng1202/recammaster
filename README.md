@@ -1,4 +1,4 @@
-# ReCamMaster: Camera-Controlled Generative Rendering from A Single Video (ICCV'25 Oral)
+# ReCamMaster: Camera-Controlled Generative Rendering from A Single Video (ICCV'25 Oral, Best Paper Finalist)
 
 <div align="center">
 <div align="center" style="margin-top: 0px; margin-bottom: 0px;">
@@ -294,6 +294,8 @@ Feel free to explore these outstanding related works, including but not limited 
 [TrajectoryCrafter](https://trajectorycrafter.github.io/): TrajectoryCrafter achieves high-fidelity novel views generation from casually captured monocular video.
 
 [GEN3C](https://research.nvidia.com/labs/toronto-ai/GEN3C/): a generative video model with precise Camera Control and temporal 3D Consistency.
+
+[Follow-Your-Creation](https://follow-your-creation.github.io/): a 4D video creation framework capable of both generating and editing 4D content from a single monocular video.
 
 ## 🌟 Citation
 
