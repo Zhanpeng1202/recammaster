@@ -63,7 +63,7 @@ def get_args():
     parser.add_argument('--hw_ratio', default=9/16, type=float, help='the height over width of the film plane')
     parser.add_argument('--total_frame', type=int, default=81)
     parser.add_argument('--stride', type=int, default=4)
-    parser.add_argument('--cam_idx', type=str, default="05")
+    parser.add_argument('--cam_idx', type=str, default="09")
     parser.add_argument('--base_xval', type=float, default=0.08)
     parser.add_argument('--zval', type=float, default=0.15)
     parser.add_argument('--x_min', type=float, default=-2)
