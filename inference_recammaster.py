@@ -128,7 +128,7 @@ class TextVideoCameraDataset(torch.utils.data.Dataset):
         data = {"text": text, "video": video, "path": path}
 
         # load camera
-        tgt_camera_path = "./example_test_data/cameras/camera_extrinsics.json"
+        tgt_camera_path = "/u/xiangl12/project/zhanpeng/code/ReCamMaster/example_test_data/cameras/custom_camera_pan.json"
         with open(tgt_camera_path, 'r') as file:
             cam_data = json.load(file)
 
@@ -184,7 +184,7 @@ def parse_args():
     parser.add_argument(
         "--cam_type",
         type=str,
-        default=1,
+        default=11,
     )
     parser.add_argument(
         "--cfg_scale",

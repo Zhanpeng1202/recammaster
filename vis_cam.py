@@ -53,17 +53,17 @@ class CameraPoseVisualizer:
 
     def show(self):
         plt.title('Extrinsic Parameters')
-        plt.savefig('extrinsic_parameters.jpg', format='jpg', dpi=300)
+        plt.savefig('/u/xiangl12/project/zhanpeng/code/ReCamMaster/camera/vis/cam11.jpg', format='jpg', dpi=300)
         plt.show()
 
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--pose_file_path', default='./example_test_data/cameras/camera_extrinsics.json', type=str, help='the path of the pose file')
+    parser.add_argument('--pose_file_path', default='/u/xiangl12/project/zhanpeng/code/ReCamMaster/example_test_data/cameras/custom_camera_pan.json', type=str, help='the path of the pose file')
     parser.add_argument('--hw_ratio', default=9/16, type=float, help='the height over width of the film plane')
     parser.add_argument('--total_frame', type=int, default=81)
     parser.add_argument('--stride', type=int, default=4)
-    parser.add_argument('--cam_idx', type=str, default="09")
+    parser.add_argument('--cam_idx', type=str, default="11")
     parser.add_argument('--base_xval', type=float, default=0.08)
     parser.add_argument('--zval', type=float, default=0.15)
     parser.add_argument('--x_min', type=float, default=-2)
@@ -106,11 +106,17 @@ if __name__ == '__main__':
     with open(args.pose_file_path, 'r') as file:
         data = json.load(file)
     cameras = [parse_matrix(data[f"frame{i}"][f"cam{args.cam_idx}"]) for i in range(0, args.total_frame, args.stride)]
+
+    # print(np.stack(cameras).shape)
     cameras = np.transpose(np.stack(cameras), (0, 2, 1))
+    # print(cameras.shape)
+    # print(cameras)
+    
 
     w2cs = []
     for cam in cameras:
         if cam.shape[0] == 3:
+            print("this should not happen")
             cam = np.vstack((cam, np.array([[0, 0, 0, 1]])))
         cam = cam[:, [1, 2, 0, 3]]
         cam[:3, 1] *= -1.
