@@ -128,7 +128,7 @@ class TextVideoCameraDataset(torch.utils.data.Dataset):
         data = {"text": text, "video": video, "path": path}
 
         # load camera
-        tgt_camera_path = "/u/xiangl12/project/zhanpeng/code/ReCamMaster/example_test_data/cameras/custom_camera_pan.json"
+        tgt_camera_path = "/u/xiangl12/project/zhanpeng/code/ReCamMaster/example_test_data/cameras/multi_camera_trajectories.json"
         with open(tgt_camera_path, 'r') as file:
             cam_data = json.load(file)
 
