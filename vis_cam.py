@@ -53,17 +53,17 @@ class CameraPoseVisualizer:
 
     def show(self):
         plt.title('Extrinsic Parameters')
-        plt.savefig('/u/xiangl12/project/zhanpeng/code/ReCamMaster/camera/vis/cam13.jpg', format='jpg', dpi=300)
+        plt.savefig('/u/xiangl12/project/zhanpeng/code/ReCamMaster/camera/vis/cam16.jpg', format='jpg', dpi=300)
         plt.show()
 
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--pose_file_path', default='/u/xiangl12/project/zhanpeng/code/ReCamMaster/example_test_data/cameras/multi_camera_trajectories.json', type=str, help='the path of the pose file')
+    parser.add_argument('--pose_file_path', default='/u/xiangl12/project/zhanpeng/code/ReCamMaster/example_test_data/cameras/v3_camera_trajectories.json', type=str, help='the path of the pose file')
     parser.add_argument('--hw_ratio', default=9/16, type=float, help='the height over width of the film plane')
     parser.add_argument('--total_frame', type=int, default=81)
     parser.add_argument('--stride', type=int, default=4)
-    parser.add_argument('--cam_idx', type=str, default="13")
+    parser.add_argument('--cam_idx', type=str, default="16")
     parser.add_argument('--base_xval', type=float, default=0.08)
     parser.add_argument('--zval', type=float, default=0.15)
     parser.add_argument('--x_min', type=float, default=-2)
